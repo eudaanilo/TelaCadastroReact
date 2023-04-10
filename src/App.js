@@ -1,33 +1,20 @@
-import logo from './components/login';
-import './App.css';
-import {Image};
+import { React } from 'react';
+import { View, Text, Image, StyleSheet } from 'react-native';
+{/*import './App.css';*/}
+ 
 
-function App() {
-  return (
-    <div className="App">
-      <login/>
-      <header className="App-header">
-        <image style={styles.imagemReact} source={require('../../my-app/public/logo192.png')} />
-        <img src={logo} className="App-logo" alt="logo"/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+  function TelaLogin(){
+    return(
+      <Image style={styles.Imagem} source={require('../src/components/img/logo512.png')}/>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-  imagemReact:{
-    backgroundColor: 'black'
-  }
+  body:{
+    width: "100%",
+    height: "100%",
+    backgroundColor: '#000'
+  },
 });
-export default App;
